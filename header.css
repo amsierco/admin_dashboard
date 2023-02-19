@@ -1,0 +1,25 @@
+.header #icon{
+    width: var(--icon-size);
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1.25fr;
+    gap: 4px;
+}
+
+.header .top {
+    display: grid;
+    grid-template-columns: 1fr 5fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2px;
+    overflow: auto;
+}
+
+.header .bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr repeat(3, 1fr);
+    grid-template-rows: 3fr;
+    grid-gap: 2px;
+    overflow: auto;
+}

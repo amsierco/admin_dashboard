@@ -1,0 +1,18 @@
+* {
+    border: 1px solid blue;
+}
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    /*Variables*/
+    --icon-size: 50px;
+}
+
+body {
+    display: flex;
+}
+
+.main {
+    width: 80vw;
+}
