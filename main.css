@@ -1,29 +1,48 @@
-.card-container {
-    overflow: wrap;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: var(--main-gap);
-    row-gap: var(--main-gap);
-}
-
-.main {
+.main, .main * {
     margin: 0px;
-    width: 80vw;
-    height: clamp(20vh, 60%, 80%); /*Buggy*/
-    padding: 10px;
+    padding: 0px;
+}
+.main {
     display: flex;
-    gap: var(--main-gap);
     justify-content: flex-start;
+    align-items: flex-start;
+    width: 80vw;
 }
 
-
-.main .right {
-    display: flex;
-    flex-direction: column;
+/*Right side*/
+.main .extra-info {
     width: 20vw;
 }
 
+/*Left side*/
 .main .projects {
     width: 80vw;
+}
+
+.projects .card-container {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, 1fr);*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: var(--main-spacing);
+    row-gap: var(--main-spacing);
+    padding: var(--main-spacing);
+}
+
+.card-container .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cards .card-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.projects #header {
+    padding: var(--main-spacing);
+    padding-bottom: 0px;
 }

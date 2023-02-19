@@ -11,6 +11,51 @@
 <body>
     <!-- SIDEBAR -->
     <div class="sidebar">
+        <ul>
+            <li>
+                <img src="#" alt="Dash-Logo" id="icon">
+                <text>Dashboard</text>
+            </li>
+            <br>
+            <li>
+                <img src="./icons/home-outline.svg" alt="" id="icon">
+                <text>Home</text>
+            </li>
+            <li>
+                <img src="./icons/card-account-details.svg" alt="" id="icon">
+                <text>Profile</text>
+            </li>
+            <li>
+                <img src="./icons/comment.svg" alt="" id="icon">
+                <text>Messages</text>
+            </li>
+            <li>
+                <img src="./icons/clock-outline.svg" alt="" id="icon">
+                <text>History</text>
+            </li>
+            <li>
+                <img src="./icons/note-multiple-outline.svg" alt="" id="icon">
+                <text>Tasks</text>
+            </li>
+            <li>
+                <img src="./icons/account-group-outline.svg" alt="" id="icon">
+                <text>Community</text>
+            </li>
+            <br>
+            <li>
+                <img src="./icons/cog-outline.svg" alt="" id="icon">
+                <text>Settings</text>
+            </li>
+            <li>
+                <img src="./icons/information-outline.svg" alt="" id="icon">
+                <text>Support</text>
+            </li>
+            <li>
+                <img src="./icons/shield-check-outline.svg" alt="" id="icon">
+                <text>Privacy</text>
+            </li>
+        </ul>
+<!--
         <div><img src="#" alt="Dash-Logo" id="icon">DASHBOARD</div>
         <br><br>
         <div><img src="./icons/home-outline.svg" alt="" id="icon">Home</div>
@@ -23,6 +68,7 @@
         <div><img src="./icons/cog-outline.svg" alt="" id="icon">Settings</div>
         <div><img src="./icons/information-outline.svg" alt="" id="icon">Support</div>
         <div><img src="./icons/shield-check-outline.svg" alt="" id="icon">Privacy</div>
+   -->
     </div>
 
     <div>
@@ -30,7 +76,7 @@
         <div class="header">
             <div class="top">
                 <img src="./icons/magnify.svg" id="icon"></img>
-                <div>SEARCH BAR</div>
+                <input type="text" placeholder="Search Bar" id="search-bar"></input>
                 <img src="./icons/bell-ring-outline.svg" id="icon"></img>
                 <div>LOGO</div>
                 <div>John Doe</div>
@@ -47,17 +93,67 @@
         <!-- MAIN -->
         <div class="main">
             <div class="projects">
-                Your Projects
+                <text id="header">Your Projects</text>
                 <div class="card-container">
-                    <div class="cards">1</div>
-                    <div class="cards">2</div>
-                    <div class="cards">3</div>
-                    <div class="cards">4</div>
-                    <div class="cards">5</div>
-                    <div class="cards">6</div>
+
+                    <div class="cards">
+                        <text id="title">Super Cool Project</text>
+                        <text>You make pancakes out of potatoes and add bacon to the inside.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+
+                    </div>
+                    <div class="cards">
+                        <text id="title">Less Cool Project</text>
+                        <text>Build a massive water wheel in the front lawn.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <text id="title">Impossible Project</text>
+                        <text>Code an admin dashboard in html, css, and javascript.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <text id="title">Easy Peasy App</text>
+                        <text>Code a maze generator.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <text id="title">Ad Blocker</text>
+                        <text>Disable all wifi access throughout a building.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <text id="title">Money Maker</text>
+                        <text>Establish an army of vending machines and spread them throughout the world.</text>
+                        <div class="card-icons">
+                            <img src="./icons/star-plus-outline.svg" alt="" id="icon">
+                            <img src="./icons/comment-outline.svg" alt="" id="icon">
+                            <img src="./icons/share-variant-outline.svg" alt="" id="icon">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="right">
+            <div class="extra-info">
                 <div class="announcements">
                     announcements
                 </div>

@@ -1,14 +1,19 @@
+.header, .header * {
+    margin: 0px;
+    padding: 0px;
+}
+
 .header {
     width: 80vw;
+    height: 20vh;
     display: grid;
     grid-template-rows: 1fr 1.25fr;
-    gap: 4px;
+    row-gap: 1vh;
 }
 
 .header .top {
     display: grid;
     grid-template-columns: 1fr 5fr repeat(3, 1fr);
-    grid-template-rows: 1fr;
     grid-gap: 2px;
     overflow: auto;
 }
@@ -16,7 +21,8 @@
 .header .bottom {
     display: grid;
     grid-template-columns: 1fr 2fr repeat(3, 1fr);
-    grid-template-rows: 3fr;
     grid-gap: 2px;
     overflow: auto;
 }
+
+/*Maybe use a list instead for conformity*/
