@@ -1,8 +1,5 @@
-.header #icon{
-    width: var(--icon-size);
-}
-
 .header {
+    width: 80vw;
     display: grid;
     grid-template-rows: 1fr 1.25fr;
     gap: 4px;

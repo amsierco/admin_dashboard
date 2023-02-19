@@ -6,13 +6,16 @@
     margin: 0px;
     padding: 0px;
     /*Variables*/
-    --icon-size: 50px;
+    --icon-size: 40px;
+    --main-gap: 20px;
+}
+
+#icon {
+    width: var(--icon-size);
 }
 
 body {
-    display: flex;
-}
-
-.main {
-    width: 80vw;
+    display: flex;    
+    margin: 0px;
+    padding: 0px;
 }
