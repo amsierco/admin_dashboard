@@ -7,6 +7,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 80vw;
+    padding-top: 15px;
 }
 
 #big-title {
@@ -17,44 +18,75 @@
 /*Left side*/
 .main .projects {
     width: 70vw;
+    margin: 10px;
 }
 
 .projects .card-container {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, 1fr);*/
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30vh);
     column-gap: var(--main-spacing);
     row-gap: var(--main-spacing);
     padding: var(--main-spacing);
 }
 
 .card-container .cards {
-    width: 100%;
+    padding: 6px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.3);
+    background-color: white;
 }
 
 .cards .card-icons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 16px;
+    margin-right: 10px;
 }
 
 .projects .big-title-class {
     padding-left: var(--main-spacing);
 }
 
+.cards #title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 /*Right side*/
 .main .extra-info {
     width: 30vw;
+    padding: var(--main-spacing);
 }
 
-.announcements,
+.announcements {
+    padding: var(--main-spacing);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.3);
+    height: 60%;
+    margin-top: 8px;
+}
+
 .trending {
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.3);
+    height: 40%;
+    padding: 20px;
+    row-gap: 10px;
 }
 
 .trending .handle {
@@ -69,8 +101,20 @@
 }
 
 .announcements .cards {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+}
+
+.announcements .cards #title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#logo{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
 }

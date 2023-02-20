@@ -2,28 +2,39 @@
 .sidebar * {
     padding: 0px;
     margin: 0px;
+    color: white;
+    font-weight: 800;
 }
 
 .sidebar {
     display: flex;
+    background-color: var(--primary-color);
+    padding-top: 3px;
 }
 
 .sidebar ul {
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 5%;
+    padding-right: 7%;
     width: 20vw;
 }
 
 .sidebar li {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 1vw;
+    column-gap: 5px;
     margin-bottom: 15px;
 }
 
 .sidebar li text {
+    margin-left: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+ul li svg {
+    fill: white;
+    width: var(--icon-size);
 }
 

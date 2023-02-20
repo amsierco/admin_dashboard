@@ -4,11 +4,15 @@
 }
 
 .header {
+    padding-top: 20px;
+    /*padding-left: 20px;*/ /*Causes Horizontal Scrollbar*/
+    overflow: none;
     width: 80vw;
     height: 20vh;
     display: grid;
     grid-template-rows: 1fr 1.25fr;
     row-gap: 1vh;
+    box-shadow: 0px -1px 8px 1px rgba(0,0,0,0.4);
 }
 
 .header .top {
@@ -25,4 +29,24 @@
     overflow: auto;
 }
 
-/*Maybe use a list instead for conformity*/
+.header .bottom button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 2px solid white;
+    border-radius: 80px;
+    font-weight: 800;
+}
+
+.top #search-bar {
+    height: 30%;
+    border-radius: 100px;
+    padding-left: 10px;
+}
+
+.header .bottom #logo {
+    width: 70px;
+    height: 70px;
+}

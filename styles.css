@@ -1,17 +1,22 @@
-* {
+/** {
     border: 1px solid blue;
-}
+}*/
 
+/* https://mycolor.space/?hex=%23FB923C&sub=1 COLORS */
 :root {
-    --icon-size: 30px;
-    --main-spacing: 10px;
+    --icon-size: 30px;;
+    --main-spacing: 15px;
+    --primary-color: rgba(24,146,211,255);
+    --secondary-color: rgba(241,179,42,255);
 }
 
 body { 
     display: flex;
-    min-height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     margin: 0px;
     padding: 0px;
+    font-family: roboto, sans-serif;
 }
 
 #icon {
