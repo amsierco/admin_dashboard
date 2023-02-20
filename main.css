@@ -9,14 +9,14 @@
     width: 80vw;
 }
 
-/*Right side*/
-.main .extra-info {
-    width: 20vw;
+#big-title {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 /*Left side*/
 .main .projects {
-    width: 80vw;
+    width: 70vw;
 }
 
 .projects .card-container {
@@ -42,7 +42,35 @@
     justify-content: flex-end;
 }
 
-.projects #header {
-    padding: var(--main-spacing);
-    padding-bottom: 0px;
+.projects .big-title-class {
+    padding-left: var(--main-spacing);
+}
+
+/*Right side*/
+.main .extra-info {
+    width: 30vw;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.trending .handle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: var(--main-spacing);
+}
+
+.trending .handle div {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
