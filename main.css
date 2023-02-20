@@ -1,12 +1,11 @@
-.main, .main * {
+.main {
     margin: 0px;
     padding: 0px;
-}
-.main {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 80vw;
+    max-width: 80vw;
+    width: auto;
     padding-top: 15px;
 }
 
@@ -17,13 +16,13 @@
 
 /*Left side*/
 .main .projects {
-    width: 70vw;
-    margin: 10px;
+    width: 60vw;
+    padding: 10px;
 }
 
 .projects .card-container {
+    height: max-content;
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, 1fr);*/
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 30vh);
     column-gap: var(--main-spacing);
@@ -61,11 +60,13 @@
 
 /*Right side*/
 .main .extra-info {
+    height: max-content;
     width: 30vw;
     padding: var(--main-spacing);
 }
 
 .announcements {
+    background-color: white;
     padding: var(--main-spacing);
     display: grid;
     grid-template-columns: 1fr;
@@ -79,6 +80,7 @@
 }
 
 .trending {
+    background-color: white;
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
     border: 1px solid rgba(255,255,255,0);
@@ -109,12 +111,4 @@
 .announcements .cards #title {
     font-size: 1rem;
     font-weight: 700;
-}
-
-#logo{
-    border: 1px solid white;
-    border-radius: 100%;
-    object-fit: cover;
-    width: 50px;
-    height: 50px;
 }

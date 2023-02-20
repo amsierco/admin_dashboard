@@ -1,32 +1,37 @@
-.header, .header * {
-    margin: 0px;
-    padding: 0px;
-}
-
 .header {
-    padding-top: 20px;
-    /*padding-left: 20px;*/ /*Causes Horizontal Scrollbar*/
-    overflow: none;
-    width: 80vw;
+    margin: 0px;
+    padding: 15px;
+    max-width: 80vw;
     height: 20vh;
     display: grid;
     grid-template-rows: 1fr 1.25fr;
-    row-gap: 1vh;
     box-shadow: 0px -1px 8px 1px rgba(0,0,0,0.4);
 }
 
 .header .top {
     display: grid;
-    grid-template-columns: 1fr 5fr repeat(3, 1fr);
-    grid-gap: 2px;
-    overflow: auto;
+    grid-template-columns: var(--icon-size) 50vw var(--icon-size) 70px 1fr;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+.top #top-logo-container {
+    display: flex;
+    justify-content: center;
 }
 
 .header .bottom {
     display: grid;
-    grid-template-columns: 1fr 2fr repeat(3, 1fr);
-    grid-gap: 2px;
-    overflow: auto;
+    grid-template-columns: 80px 2fr 1fr;
+    align-items: center;
+}
+
+.header .bottom .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
 }
 
 .header .bottom button {
@@ -35,18 +40,25 @@
     padding: 25px;
     padding-bottom: 15px;
     padding-top: 15px;
-    border: 2px solid white;
+    border: 2px solid rgba(0,0,0,0);
     border-radius: 80px;
     font-weight: 800;
 }
 
-.top #search-bar {
+.header .top #search-bar {
     height: 30%;
     border-radius: 100px;
-    padding-left: 10px;
+    max-width: 40vw;
+    padding-left: 20px;
 }
 
 .header .bottom #logo {
     width: 70px;
     height: 70px;
+}
+
+.header .bottom #text-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
 }
